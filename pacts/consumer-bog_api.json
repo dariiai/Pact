@@ -1,0 +1,35 @@
+{
+  "consumer": {
+    "name": "Consumer"
+  },
+  "provider": {
+    "name": "Bog API"
+  },
+  "interactions": [
+    {
+      "description": "A GET request to retrieve the something",
+      "providerState": "There is a something with id 'tester'",
+      "request": {
+        "method": "get",
+        "path": "/api/content/article/a26ce357-e3c5-4828-2a4b-08d8422b1ed9"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json; charset=utf-8"
+        },
+        "body": {
+          "Id": "a26ce357-e3c5-4828-2a4b-08d8422b1ed9",
+          "Title": "This works",
+          "Author": "mrPt",
+          "IsPublished": false
+        }
+      }
+    }
+  ],
+  "metadata": {
+    "pactSpecification": {
+      "version": "2.0.0"
+    }
+  }
+}
